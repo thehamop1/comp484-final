@@ -14,10 +14,6 @@
 ** Who is on this team?
    | **Full Name**      | **Role**                     |
    | Cristian Gutierrez | Get data from the Github API |
-   | Edgar Godoy        | UX Designer                  |
-   | Vincent Torres     | UX Designer                  |
-   | Aramayis Kageogis  | D3.js Data Visualization     |
-   | Mary Meneses       | UX Designer                  |
 ** What will the Website be about?
    This website will show statistics about a users Github projects. Although many
    of these features currently exist on the platform the purpose of this project 
@@ -31,6 +27,5 @@
    | D3.js           | This will be used for data visualization on the data gathered from the user |
 * Mockup
    Here: [[https://www.figma.com/file/cxFmkghaHRQdt9WAdStWqy/Comp-484-Final-Project-Sample?node-id=0%3A1][Mockup Link]]
-
 
 
