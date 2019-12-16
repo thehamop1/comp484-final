@@ -5,6 +5,9 @@ body{
     height: 100vh;
     margin-top: 20vh;
 }
+.navbar-logo{
+    width: 20vw;
+}
 #searchType{
     margin-left: -17%;
     padding-left: 3%;
