@@ -14,21 +14,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="home container align-items-center">
+      <div class="home container">
         <div class="col mx-auto mb-4 text-center">
             <img class="img-fluid mx-auto" alt="Not Github" src="img/notGithubLogo.svg"/>
         </div>
-        <div class="row mb-2 justify-contents-center">
+        <div class="row mb-2 justify-content-center">
             <div class="col-4 text-center">
                 <input id="homeSearch" class="input form-control mx-auto" id="Search" type="text" placeholder="Search" style="border-radius: 30px" />
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <button onclick="Search()">Search</button>
-                <select id="searchType">
-                    <option value="User">User</option>
-                    <option value="Repo">Repository</option>
+            <div class="col-12 text-center">
+                <button class="btn" id="searchButton" onclick="Search()" style="border-radius: 30px">Search</button>
+                <select class="btn" id="searchType" style="border-radius: 30px">
+                    <option  value="User">User</option>
+                    <option  value="Repo">Repository</option>
                 </select>
             </div>
         </div>

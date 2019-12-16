@@ -3,4 +3,30 @@ body{
 }
 .home{
     height: 100vh;
+    margin-top: 20vh;
+}
+#searchType{
+    margin-left: -17%;
+    padding-left: 3%;
+    padding-top: 1.01%;
+    color: white;
+    background-color: #906EF0;
+    border-color: #906EF0;
+    font-size: 1.5rem;
+}
+#searchButton{
+    padding-right: 24%;
+    padding-top: 1.01%;
+    color:white;
+    background-color: #7146EC;
+    border-color: #7146EC;
+    font-size: 1.5rem;
+}
+
+#searchButton:focus{
+    outline: none;
+}
+
+#searchType:focus{
+    outline: none;
 }
