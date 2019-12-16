@@ -4,20 +4,38 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
     <title>Github Project Js Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
   </head>
   <body>
-      <p>Test</p>
-      <input id="Search" type="text" placeholder="Search.."/>
-      <button onclick="Search()">Search</button>
-      <select id="searchType">
-          <option value="User">User</option>
-          <option value="Repo">Repository</option>
-      </select>
-      <br/><br/>
-      <select id="listOfResults" >
-      </select>
-      <button onclick="searchResults()">Search</button>
+    <div class="home container align-items-center">
+        <div class="col mx-auto mb-4 text-center">
+            <img class="img-fluid mx-auto" alt="Not Github" src="img/notGithubLogo.svg"/>
+        </div>
+        <div class="row mb-2 justify-contents-center">
+            <div class="col-4 text-center">
+                <input id="homeSearch" class="input form-control mx-auto" id="Search" type="text" placeholder="Search" style="border-radius: 30px" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button onclick="Search()">Search</button>
+                <select id="searchType">
+                    <option value="User">User</option>
+                    <option value="Repo">Repository</option>
+                </select>
+            </div>
+        </div>
+    <!-- <select id="listOfResults" >
+    </select>
+    <button onclick="searchResults()">Search</button> -->
+    </div>
   </body>
   <script src="index.js" ></script>
 </html>
