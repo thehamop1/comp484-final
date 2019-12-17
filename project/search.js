@@ -75,7 +75,7 @@ function getRepoListFromApiData(apiData, listHTML){
     //     listOfResults.append(option);
     // }
     // listOfResults.setAttribute('searchType', searchType);
-    for(var result=0;result<10;result++)
+    for(var result=0;result<20;result++)
         getData(apiData[result].url, writeSearchDetails);
 }
 function createOptions(results){//this is just populating the front end for now
@@ -90,4 +90,13 @@ function runSearch(keyword, type){
         getData(searchURL + "users?q=" + keyword, createOptions);
     else if(searchType===REPO)
         getData(searchURL + "repositories?q=" + keyword, createOptions);
+}
+
+function Search(){
+    var keyword = document.getElementById("searchKeyword").value;
+    var searchType = document.getElementById("searchType").value;
+    var url = encodeURIComponent("emacs") + "&" + encodeURIComponent("Repo");
+    var _url = location.href; 
+    _url = ( _url.indexOf('?') !== -1 ) ? _url+'&'+url : _url+'?'+url;
+    window.location.href = _url;
 }

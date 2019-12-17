@@ -25,7 +25,7 @@
               <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav mr-auto">
                       <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 30px">
+                        <input id="searchKeyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 30px">
                         <div>
                             <button class="btn" id="searchButton" onclick="Search()" style="border-radius: 30px">Search</button>
                             <select class="btn" id="searchType" style="border-radius: 30px">
@@ -42,7 +42,7 @@
             <h1>Search Results...</h1>
             <p id="searchDescription"></p>
         </div>
-        <div class="row" id="searchResults">
+        <div class="row justify-content-center align-items-center" id="searchResults">
         </div>
       </div>
   </body>
