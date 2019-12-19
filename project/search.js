@@ -9,7 +9,7 @@ window.onload = function(){
         data = {}, tmp;
     header.innerHTML = params[1] + "s matching a search for \"" + params[0] + "\"";
     runSearch(params[0], params[1]);
-}
+};
 
 //this just makes a request for the github data
 function getData(url, callback) {
@@ -33,8 +33,12 @@ function searchResults(){
     console.log(selection);
     getData(selection, writeSearchDetails);
 }
+function requestVisual(repoName){
+    var url = 'visualization.html?' + encodeURIComponent(repoName);
+    window.location.href = url;
+}
 //this is the first initial search when the user wants to get a list of possible matches
-function writeToDom(element, repoName, user, description, language){
+function writeToDom(element, repoName, user, description, language, name){
     var writer = document.createElement("div");
     writer.setAttribute("class", "card col-3 p-3 m-2 d-flex flex-column justify-content-between");
     var header = document.createElement("h5");
@@ -43,6 +47,8 @@ function writeToDom(element, repoName, user, description, language){
     summary.setAttribute("class", "card-text");
     var button = document.createElement("a");
     button.setAttribute("class", "btn btn-primary");
+    button.setAttribute("Repository-Name", name);
+    button.setAttribute("onclick", "requestVisual('"+ name +"')");
     console.log(header);
     header.innerHTML = repoName;
     summary.innerHTML = description + "<br/>Owner: " + user + "<br />Language: " + language;
@@ -58,7 +64,7 @@ function writeSearchDetails(repoData){//THIS IS TEMPORARY AND NEEDS TO BE REPLAC
     var isRepoSearch = (searchType===REPO);
     console.log(repoData);
     if(isRepoSearch){
-        writeToDom(results, repoData.name, repoData.owner.login, repoData.description, repoData.language);
+        writeToDom(results, repoData.name, repoData.owner.login, repoData.description, repoData.language, repoData.url);
     }else{
         console.log("hello world");
     }
