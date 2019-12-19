@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Github Project Js Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html" >
+              <img src="img/notGithubLogo.svg" class="img navbar-logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                      <form class="form-inline">
+                        <input id="searchKeyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 30px">
+                        <div>
+                            <button class="btn" id="searchButton" onclick="Search()" style="border-radius: 30px">Search</button>
+                            <select class="btn" id="searchType" style="border-radius: 30px">
+                                <option  value="User">User</option>
+                                <option  value="Repo">Repository</option>
+                            </select>
+                        </div>
+                      </form>
+                  </ul>
+              </div>
+      </nav>
+      <div class="container">
+          <div class="row mt-2">
+              <div class="col-12 bg-secondary" id="contributers"></div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12 bg-secondary" id="test"></div>
+          </div>
+      </div>
+  </body>
+  <script src="visualization.js" ></script>
+</html>
