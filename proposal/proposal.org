@@ -30,6 +30,6 @@
    | Github API      | This is where we will gather user data from in order to populate graphs     |
    | D3.js           | This will be used for data visualization on the data gathered from the user |
 * Mockup
-   Here: [[https://docs.google.com/presentation/d/1IY095bqDjDVONEtfrtbY0o4Batjp4rDK1AeWvW-VAlU/edit][Mockup Link]]
+   Here: [[https://www.figma.com/file/cxFmkghaHRQdt9WAdStWqy/Comp-484-Final-Project-Sample?node-id=0%3A1][Mockup Link]]
 * Source Code
    Here: [[https://github.com/thehamop1/comp484-final][Link to Source Code]]
