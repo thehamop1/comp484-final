@@ -33,3 +33,26 @@ body{
 #searchType:focus{
     outline: none;
 }
+
+#searchToggleTop{
+    margin-left: -40%;
+    padding-left: 3%;
+    padding-top: 1.01%;
+    color: white;
+    background-color: #906EF0;
+    border-color: #906EF0;
+    font-size: 1.5rem;
+}
+
+#searchButtonTop{
+    padding-right: 45%;
+    padding-top: 1.01%;
+    color:white;
+    background-color: #7146EC;
+    border-color: #7146EC;
+    font-size: 1.5rem;
+}
+
+.contact{
+    color: white !important;
+}

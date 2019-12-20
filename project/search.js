@@ -40,7 +40,7 @@ function requestVisual(repoName){
 //this is the first initial search when the user wants to get a list of possible matches
 function writeToDom(element, repoName, user, description, language, name){
     var writer = document.createElement("div");
-    writer.setAttribute("class", "card col-3 p-3 m-2 d-flex flex-column justify-content-between");
+    writer.setAttribute("class", "card col-3 p-3 m-2 d-flex flex-column justify-content-between h-100");
     var header = document.createElement("h5");
     header.setAttribute("class", "card-title");
     var summary = document.createElement("p");
@@ -100,9 +100,7 @@ function runSearch(keyword, type){
 
 function Search(){
     var keyword = document.getElementById("searchKeyword").value;
-    var searchType = document.getElementById("searchType").value;
-    var url = encodeURIComponent("emacs") + "&" + encodeURIComponent("Repo");
-    var _url = location.href; 
-    _url = ( _url.indexOf('?') !== -1 ) ? _url+'&'+url : _url+'?'+url;
-    window.location.href = _url;
+    var searchType = document.getElementById("searchToggleTop").value;
+    var url = './index.html?'; // encodeURIComponent(keyword) + "&" + encodeURIComponent(searchType);
+    document.location.href = 'index.html';
 }

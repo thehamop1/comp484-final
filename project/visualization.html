@@ -28,8 +28,8 @@
                       <form class="form-inline">
                         <input id="searchKeyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 30px">
                         <div>
-                            <button class="btn" id="searchButton" onclick="Search()" style="border-radius: 30px">Search</button>
-                            <select class="btn" id="searchType" style="border-radius: 30px">
+                            <button class="btn" id="searchButtonTop" onclick="Search()" style="border-radius: 30px">Search</button>
+                            <select class="btn" id="searchToggleTop" style="border-radius: 30px">
                                 <option  value="User">User</option>
                                 <option  value="Repo">Repository</option>
                             </select>
@@ -39,8 +39,11 @@
               </div>
       </nav>
       <div class="container">
-          <div class="row mt-2">
-              <div class="col-12 bg-secondary" id="contributers"></div>
+          <div class="row mt-2 bg-secondary">
+              <div class="col-3 mt-2 justify-content-center text-center" >
+                <h5 class="text-light text-center">Top Contributors</h5>
+              </div>
+              <div class="col-12 bg-secondary d-flex justify-content-around" id="contributers"></div>
           </div>
           <div class="row mt-2">
             <div class="col-12 bg-secondary" id="test"></div>
